@@ -16,9 +16,9 @@ public class SensorDataProcessor {
     // calculates average of sensor data
     private double average(double[] array)
     {
-        int i = 0;
+        int i = 0; //unneseccery value , it assigned  in the for loop below**
         double val = 0;
-        for (i = 0; i < array.length; i++) 
+        for (i = 0; i < array.length; i++) //here i = 0**
         {
             val += array[i];
         }
@@ -34,8 +34,9 @@ public class SensorDataProcessor {
 
         //import java.io.BufferedWriter - Sara
         BufferedWriter out;
+
         // Write racing stats data into a file
-        try {
+        try { // 
 
             //import java.io.FileWriter
         out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
